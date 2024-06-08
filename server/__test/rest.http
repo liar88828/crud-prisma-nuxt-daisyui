@@ -1,0 +1,42 @@
+@url = localhost:3000/api
+###
+GET http://{{url}}
+
+
+###
+GET http://{{url}}/user
+Content-Type: application/json
+
+### by id
+GET http://{{url}}/user/89c982f2-43b7-4095-91e1-2dedfe119904
+Content-Type: application/json
+
+
+
+
+###
+POST http://{{url}}/user/
+Content-Type: application/json
+
+{
+    "name":"jone does"
+}
+
+
+
+###
+PUT  http://{{url}}/user/89c982f2-43b7-4095-91e1-2dedfe119904
+Content-Type: application/json
+
+ {
+    "name":"jone does update"
+}
+
+
+
+
+###
+DELETE http://{{url}}/user/89c982f2-43b7-4095-91e1-2dedfe119904
+Content-Type: application/json
+
+ 

@@ -1,3 +1,6 @@
+import { prisma } from "~/server/config/prisma"
+
 export default defineEventHandler(async (event) => {
-  return { api: "Hello Nitro" }
+  const user = await prisma.users.findMany({ take: 1000 })
+  return { data: user, success: true, code: 201 }
 })

@@ -1,5 +1,3 @@
-<template>
-  <div class="text-red-400">Hello</div>
-</template>
+<template>hello</template>
 
 <script lang="ts" setup></script>
