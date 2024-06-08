@@ -1,0 +1,10 @@
+@url = localhost:3000/api
+###
+GET http://{{url}}
+
+
+###
+GET http://{{url}}/user
+Content-Type: application/json
+
+
