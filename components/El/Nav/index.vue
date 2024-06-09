@@ -1,7 +1,7 @@
 <template>
   <div class="navbar bg-base-100">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">daisyUI</a>
+      <NuxtLink to="/" class="btn btn-ghost text-xl">Home</NuxtLink>
     </div>
     <div class="flex-none">
       <div class="dropdown dropdown-end">

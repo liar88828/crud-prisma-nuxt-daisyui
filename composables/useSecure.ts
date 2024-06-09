@@ -59,10 +59,11 @@ export const useSecure = () => {
     await signIn(action, { redirect: false })
   }
   //
-  const onLogout = () => {
-    signOut()
+  const onLogout = async () => {
+    await signOut()
   }
   const isLogin = computed(() => status.value === "authenticated")
+
   return {
     register,
     onRegister,

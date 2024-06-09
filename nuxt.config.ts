@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@sidebase/nuxt-auth"],
   css: ["~/assets/css/tailwind.css"],
   auth: {
+    // globalAppMiddleware: true,
     provider: {
       type: "authjs",
     },
